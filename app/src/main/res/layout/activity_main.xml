@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck"
+    android:windowSoftInputMode="adjustPan"
+    tools:context="axisimski.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout9"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/cond"
+            android:layout_width="64dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/degrees"
+            android:layout_marginStart="37dp"
+            app:srcCompat="@drawable/loc"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="135dp" />
+
+        <TextView
+            android:id="@+id/degrees"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/cond"
+            android:text="----"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout9">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/day1text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="58dp"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day1text"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/day1" />
+
+            <TextView
+                android:id="@+id/day1textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day1"
+                android:layout_alignEnd="@+id/day1"
+                android:layout_alignStart="@+id/day1"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/relativeLayout3"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="247dp">
+
+            <TextView
+                android:id="@+id/day2text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="58dp"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day2text"
+                android:layout_alignParentStart="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/day2" />
+
+            <TextView
+                android:id="@+id/day2textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day2"
+                android:layout_alignEnd="@+id/day2"
+                android:layout_alignStart="@+id/day2"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/relativeLayout6"
+            tools:layout_editor_absoluteX="354dp"
+            tools:layout_editor_absoluteY="744dp">
+
+            <TextView
+                android:id="@+id/day4text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="58dp"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day4text"
+                android:layout_alignParentStart="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/day4" />
+
+            <TextView
+                android:id="@+id/day4textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day4"
+                android:layout_alignEnd="@+id/day4"
+                android:layout_alignStart="@+id/day4"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/relativeLayout5"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="496dp">
+
+            <TextView
+                android:id="@+id/day3text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="58dp"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <ImageView
+                android:id="@+id/day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day3text"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/day3" />
+
+            <TextView
+                android:id="@+id/day3textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/day3"
+                android:layout_alignEnd="@+id/day3"
+                android:layout_alignStart="@+id/day3"
+                android:text="----"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        android:layout_alignParentTop="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8271447368800027/7153759697"></com.google.android.gms.ads.AdView>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="479dp" />
+
+        <requestFocus />
+
+        <Button
+            android:id="@+id/execute"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/input"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_btn"
+            android:onClick="execute"
+            android:text="Search "
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:checked="false"
+            android:splitTrack="false"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/background_light"
+            tools:checked="false"
+            tools:layout_editor_absoluteX="343dp"
+            tools:layout_editor_absoluteY="299dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/input"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="      C° ⇄  F°  "
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
